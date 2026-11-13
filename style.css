@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #0b1b36; /* Dark blue matching your CV */
+    color: white;
+    padding: 50px 0;
+    border-bottom: 5px solid #4a90e2;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.header-photo {
+    flex-shrink: 0; 
+}
+
+.header-photo img {
+    width: 220px; 
+    height: 220px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 4px solid #4a90e2; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    color: #a0b2c9;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #d1d9e2;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #4a90e2;
+}
+
+/* Sections */
+.section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #0b1b36;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Project Section */
+.project-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+.project-card h4 {
+    font-size: 1.3rem;
+    color: #0b1b36;
+    margin-bottom: 5px;
+}
+
+.project-role {
+    font-weight: 600;
+    color: #4a90e2;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.project-desc {
+    margin-bottom: 20px;
+}
+
+.video-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #4a90e2;
+}
+
+.video-section h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.video-note {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Responsive 16:9 Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.github-link {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.github-link a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.github-link a:hover {
+    text-decoration: underline;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #a0b2c9;
+}
+
+.education-item h4 {
+    color: #0b1b36;
+    font-size: 1.1rem;
+}
+
+.education-item .date {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #0b1b36;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 600px) {
+    .contact-info p {
+        display: block;
+        margin-bottom: 10px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .section {
+        padding: 20px;
+    }
+   
+}
+ @media (max-width: 600px) {
+    .header-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .contact-info p {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .header-photo img {
+        width: 140px; 
+        height: 140px;
+    }
+}
